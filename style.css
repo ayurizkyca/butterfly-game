@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* max-width: 800px;
+  max-height: 600px; */
+}
+
+#butterfly {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  background-image: url("assets/butterfly.gif");
+  background-size: cover;
+}
+
+#obstacle {
+  position: absolute;
+  bottom: 180px;
+  right: -200px;
+  width: 80px;
+  height: 80px;
+  background-image: url("assets/obstacle.gif");
+  background-size: cover;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#gameOverModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal-content {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; */
+  width: 300px;
+  height: 275px;
+  text-align: center;
+  background-image: url("assets/modal-game.png");
+  background-size: cover;
+}
+
+.modal-content h1 {
+  margin-bottom: 10px;
+  margin-top: 65px;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  /* background-color: #4caf50; */
+  background-image: url("assets/btn-modal-tengah.png");
+  background-size: cover;
+  height: 60px;
+  width: 200px;
+  border: none;
+  /* border-radius: 8px; */
+  color: white;
+  cursor: pointer;
+}
+
+.custom-btn {
+  position: relative;
+  background-image: url("assets/btn-modal-tengah.png");
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.custom-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+
+
+.hidden {
+  display: none !important;
+}
