@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Butterfly Game</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butterfly Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RV3KQZ78MR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
-  <canvas id="game" width="800" height="400"></canvas>
+      gtag("config", "G-RV3KQZ78MR");
+    </script>
+  </head>
 
-  <div id="butterfly"></div>
-  <div id="obstacle"></div>
-  <div id="score">Score: 0</div>
+  <body>
+    <canvas id="game" width="800" height="400"></canvas>
 
-  <div id="gameOverModal" class="hidden">
-    <div class="modal-content">
-      <h1>Game Over!</h1>
-      <p id="finalScore"></p>
-      <button onclick="restartGame()">Main Lagi</button>
+    <div id="butterfly"></div>
+    <div id="obstacle"></div>
+    <div id="score">Score: 0</div>
+
+    <div id="gameOverModal" class="hidden">
+      <div class="modal-content">
+        <h1>Game Over!</h1>
+        <p id="finalScore"></p>
+        <button onclick="restartGame()">Main Lagi</button>
+      </div>
     </div>
-  </div>  
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
-
